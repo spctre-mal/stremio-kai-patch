@@ -1,0 +1,36 @@
+:root {
+	--background: color-mix(
+		in srgb,
+		var(--secondary-background-color),
+		transparent 25%
+	) !important;
+}
+
+/* STREMIO VERTICAL NAVBAR */
+.vertical-nav-bar-container-UPAkA {
+	margin: 6% 0 !important;
+	overflow-x: hidden !important;
+}
+
+/* EPISODES THUMBNAIL */
+.video-container-ezBpK .thumbnail-container-Zm8Cl {
+	width: clamp(30px, 25vw, 200px) !important;
+}
+
+/* DISPLAY SCROLLBAR */
+.streams-container-bbSc4,
+.videos-container-msX8s,
+.side-drawer-r9EuA .series-content-VkYHB .videos-nRM2D {
+	scrollbar-width: auto !important;
+}
+
+/* FIX META DETAILS VIDEO WIDTH */
+.metadetails-container-K_Dqa .metadetails-content-Uz5EV .videos-list-nE0LJ,
+.metadetails-container-K_Dqa .metadetails-content-Uz5EV .streams-list-Y1lCM {
+	flex: 0 0 50% !important;
+}
+
+/* HERO ANIME/MOVIES BUTTON */
+.hero-catalog-btn {
+	word-break: keep-all;
+}
