@@ -12,7 +12,7 @@ This is a simple Powershell script that fixes some of the CSS and subtitles issu
 
 ## How to use
 
-- Open ```patch.ps1``` with Powershell
+- Open ```START THIS.bat```
 - Select your Stremio Kai directory
 - Wait for the patch to be applied
 
