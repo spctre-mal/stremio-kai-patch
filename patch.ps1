@@ -2,8 +2,6 @@ Add-Type -AssemblyName System.Windows.Forms
 
 $expectedSubPath = "portable_config\webmods\Theme"
 
-Write-Host "PATCH FOR STREMIO KAI CLIENT"
-
 # --- Ask user to select Stremio Kai folder ---
 Write-Host "Select your Stremio Kai folder:"
 $folderDialog = New-Object System.Windows.Forms.FolderBrowserDialog
@@ -11,7 +9,6 @@ $folderDialog.Description = "Select your Stremio Kai folder"
 
 if ($folderDialog.ShowDialog() -ne "OK") {
     Write-Host "ERROR: No folder selected." -ForegroundColor Red
-    Read-Host "Press ENTER to exit"
     exit
 }
 
@@ -30,7 +27,6 @@ Write-Host ""
 # --- Validate Theme directory ---
 if (-not (Test-Path $themeDir)) {
     Write-Host "ERROR: Invalid Stremio Kai folder selected." -ForegroundColor Red
-    Read-Host "Press ENTER to exit"
     exit
 }
 
@@ -45,7 +41,6 @@ $fixCssDstFull = $fixCssDst
 
 if (-not (Test-Path $fixCssSrcFull)) {
     Write-Host "ERROR: Source $fixCssSrc not found at $fixCssSrcFull" -ForegroundColor Red
-    Read-Host "Press ENTER to exit"
     exit
 }
 
@@ -101,7 +96,6 @@ else {
 
 if (-not (Test-Path $mpvConf)) {
     Write-Host "ERROR: mpv.conf not found." -ForegroundColor Red
-    Read-Host "Press ENTER to exit"
     exit
 }
 
@@ -140,4 +134,3 @@ else {
 
 Write-Host ""
 Write-Host "All patches applied successfully." -ForegroundColor Green
-Read-Host "Press ENTER to exit"
