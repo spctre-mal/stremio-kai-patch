@@ -18,5 +18,5 @@ This is a simple Powershell script that fixes some of the CSS and subtitles issu
 
 Keep in mind that if you edited ```mpv.conf``` and already changed the subtitle settings, they will be overwritten.
 
-### Tested on [v3.0.0](https://github.com/allecsc/Stremio-Kai/releases/tag/v3.0.0), it may not work on older versions.
+#### Tested on [v3.0.0](https://github.com/allecsc/Stremio-Kai/releases/tag/v3.0.0), it may not work on older versions.
 
