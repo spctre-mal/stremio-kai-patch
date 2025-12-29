@@ -33,4 +33,5 @@
 /* HERO ANIME/MOVIES BUTTON */
 .hero-catalog-btn {
 	word-break: keep-all;
+	width: unset !important;
 }
